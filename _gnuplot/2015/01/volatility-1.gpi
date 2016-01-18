@@ -1,0 +1,13 @@
+set terminal svg size 300, 300
+set termopt enhanced
+set termoption font 'monospace,12'
+set output 'volatility-1.svg'
+set style data lines
+set xtics format "%.1f" textcolor rgb 'gray'
+set grid linecolor rgb 'gray'
+set ytics format "%.1f" textcolor rgb 'gray'
+set autoscale
+
+set xlabel "normalized file number, x_i" textcolor rgb '#81b341'
+set ylabel "normalized frequency, p(x_i)" textcolor rgb '#81b341'
+plot "volatility-1.dat" title "" linecolor rgb '#b82f2f' linewidth 2
